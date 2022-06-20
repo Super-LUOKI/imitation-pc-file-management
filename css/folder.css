@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../images/bg.jpeg) no-repeat;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(228, 228, 228);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.folder-window {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    min-width: 600px;
+    padding: 0 15px 15px 15px;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.folder-window .title-bar {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    margin-bottom: 8px;
+}
+
+.title-bar .top-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.title-bar .top-icon:nth-child(1) {
+    background-color: #f12a2a;
+}
+
+.title-bar .top-icon:nth-child(2) {
+    background-color: #17c417;
+}
+
+.title-bar .top-icon:nth-child(3) {
+    background-color: #0e91dd;
+}
+
+.title-bar .title {
+    font-size: 15px;
+}
+
+.alldom {
+    height: 67%;
+}
+
+.alldom ul {
+    padding: 0;
+    list-style: none;
+}
+
+.folder {
+    background: url(../images/213125.png) center top no-repeat;
+}
+
+.doc,
+.docx {
+    background: url(../images/DOC_File_Extension.png) center top no-repeat;
+}
+
+.pdf {
+    background: url(../images/PDF_File_Extension.png) center top no-repeat;
+}
+
+.xls,
+.xlsx {
+    background: url(../images/XLS_File_Extension.png) center top no-repeat;
+}
+
+.other-filetype {
+    background: url(../images/file.png) center top no-repeat;
+}
+
+.alldom ul li {
+    overflow: hidden;
+    width: 100px;
+    height: 115px;
+    float: left;
+    margin-left: 55px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: all 0.2s ease-in 0.1s;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.alldom ul li.focus {
+    background-color: #69a9da;
+    border: 1px solid #a7aae3;
+}
+
+.alldom ul li:hover {
+    background-color: #69a9ba;
+    border: 1px solid #a7aae3;
+}
+
+input.changename {
+    position: absolute;
+    border-radius: 0px;
+    left: -25px;
+    bottom: 10px;
+    overflow: hidden;
+    width: 98px;
+    height: 20px;
+    color: #595c5f;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 0;
+    border: 0;
+    border-radius: 8px;
+    transition: all 0.2s ease-in 0.1s;
+    margin-left: 25px;
+    background: none;
+}
+
+input.changename:hover {
+    background: none;
+    color: #F33;
+}
+
+input.changename:focus {
+    background-color: #fff;
+}
+
+.info-bar {
+    height: 65px;
+    display: block!important;
+}
+
+.info-icon {
+    width: 60px;
+    height: 90%;
+    display: inline-block;
+    background-size: cover;
+}
+
+.info-detail {
+    display: inline-block;
+    height: 90%;
+    width: 440px;
+    margin-left: 10px;
+}
+
+.detail-form .detail-field {
+    float: left;
+    width: 200px;
+}
+
+.detail-field2 {
+    font-size: large;
+    margin-left: 10px;
+}
+
+.detail-var {
+    margin-right: 10px;
+}
+
+.navigation-bar .home {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/blue_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+}
+
+.navigation-bar .home:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-bar .gotopre {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/return.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 3px;
+    position: relative;
+    display: inline-block;
+    background-color: ghostwhite;
+}
+
+.navigation-bar .gotopre:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.folder-navigation .foldername {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.folder-navigation .triangle {
+    width: 8px;
+    margin: 0 5px 3px 5px;
+}
+
+.navigation-bar .folder-navigation {
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.navigation-bar .forward-backward {
+    width: 67px;
+    display: inline-block;
+}
+
+.navigation-bar .forward-backward .backward {
+    background-image: url(../images/forward.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 3px;
+    border: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.navigation-bar .forward-backward .backward:hover,
+.navigation-bar .forward-backward .backward:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation-bar .forward-backward .forward {
+    background-image: url(../images/forward.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 3px;
+    border: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.navigation-bar .forward-backward .forward:hover,
+.navigation-bar .forward-backward .forward:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flipy-x {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+}
+
+.flipy-y {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+}
